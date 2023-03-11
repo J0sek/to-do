@@ -50,7 +50,7 @@ const listControl = (function () {
   }
 
   function removeFromList(list, item) {
-    let itemIndex = list.findIndex(item);
+    let itemIndex = list.indexOf(item);
     list.splice(itemIndex, 1);
   }
 
