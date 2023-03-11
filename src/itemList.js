@@ -49,7 +49,12 @@ const listControl = (function () {
     }
   }
 
-  return { addToList };
+  function removeFromList(list, item) {
+    let itemIndex = list.findIndex(item);
+    list.splice(itemIndex, 1);
+  }
+
+  return { addToList, removeFromList };
 })();
 
 export { listControl, Item };
