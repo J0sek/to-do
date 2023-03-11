@@ -1,4 +1,6 @@
 function Item(name, desc, priority, dueDate) {
+  priority = priority === "high" ? 3 : priority === "mid" ? 2 : 1;
+
   return { name, desc, priority, dueDate };
 }
 
