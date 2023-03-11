@@ -6,12 +6,14 @@ const listControl = (function () {
   function addToList(list, item) {
     if (list.length === 0) {
       list[0] = item;
+      item.index = 0;
       return;
     }
 
     for (let j = 0; j <= list.length; j++) {
       if (list.length === j) {
         list[list.length] = item;
+        item.index = j;
         break;
       }
 
@@ -21,6 +23,7 @@ const listControl = (function () {
         }
 
         list[j] = item;
+        item.index = j;
         break;
       } else if (Number(item.dueDate) == Number(list[j].dueDate)) {
         if (Number(item.priority) <= Number(list[j].priority)) {
@@ -29,6 +32,7 @@ const listControl = (function () {
           }
 
           list[j] = item;
+          item.index = j;
           break;
         } else {
           for (let p = list.length; p > j + 1; p--) {
@@ -36,6 +40,7 @@ const listControl = (function () {
           }
 
           list[j + 1] = item;
+          item.index = j + 1;
           break;
         }
       } else {
