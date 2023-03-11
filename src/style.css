@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: flower;
 }
 
 html {
@@ -168,4 +169,83 @@ li>.counter {
   text-align: center;
   line-height: 25px;
   font-size: 25px;
+}
+
+.item-maker {
+  margin-top: 20px;
+  outline: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.item-maker input {
+  outline: 0;
+  width: 100%;
+  border: 0;
+  height: 30px;
+  font-size: 22px;
+  padding: 3px;
+}
+
+[class^=item-input][class$=container] {
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+}
+
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+
+.priority-container {
+  display: flex;
+  margin-left: 5px;
+  gap: 5px;
+}
+
+.priority-container>div {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.priority-container>div:hover {
+  cursor: pointer;
+  background-color: rgb(220, 220, 220);
+}
+
+.action-container {
+  margin-right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.action-container>button {
+  width: 80px;
+  height: 40px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.action-container>button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 2px rgb(220, 220, 220);
+}
+
+.item-input-cancel {
+  background-color: rgb(240, 50, 50);
+}
+
+.item-input-submit {
+  background-color: rgb(50, 240, 50);
 }
