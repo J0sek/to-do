@@ -177,6 +177,7 @@ li>.counter {
 }
 
 .item-maker {
+  display: none;
   margin-top: 20px;
   outline: 1px solid black;
   padding: 5px;
