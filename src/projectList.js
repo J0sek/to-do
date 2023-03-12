@@ -9,11 +9,15 @@ const project = (function () {
     projects[name] = [];
   }
 
+  function returnCurrent() {
+    return currentProject;
+  }
+
   function changeCurrent(list) {
     currentProject = projects[list];
   }
 
-  return { changeCurrent, addNewProject, currentProject, projects };
+  return { projects, changeCurrent, addNewProject, returnCurrent, projects };
 })();
 
 function reloadProjectList() {
