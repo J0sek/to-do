@@ -73,7 +73,7 @@ li>.counter {
   right: 10px;
 }
 
-[class^=list]>li:hover {
+[class^=list]>[class^=list]:hover {
   background-color: rgb(230, 230, 230);
 }
 
@@ -92,15 +92,16 @@ li>.counter {
   cursor: pointer;
 }
 
+.new-project-form-container {
+  display: none;
+}
+
 .new-project-form {
+  display: none;
   outline: 1px solid black;
   padding: 3px;
   margin-left: 5%;
   width: 90%;
-}
-
-.new-project-form-container:hover {
-  background-color: red;
 }
 
 .new-project-input-name-container {
