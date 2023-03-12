@@ -52,7 +52,7 @@ ol>li {
 }
 
 [class^=list]>li {
-  font-size: 18px;
+  font-size: 20px;
   margin: 5px 0 5px;
   padding: 5px 0 5px;
   display: flex;
@@ -90,6 +90,43 @@ li>.counter {
 
 .new-projects:hover {
   cursor: pointer;
+}
+
+.new-project-form {
+  outline: 1px solid black;
+  padding: 3px;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.new-project-form-container:hover {
+  background-color: red;
+}
+
+.new-project-input-name-container {
+  border: 1px solid black;
+}
+
+.new-project-input-name {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.new-project-input-name:focus {
+  border: none;
+  outline: none;
+}
+
+.new-project-form-button-holder {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10%;
+}
+
+.new-project-form-button-holder>button {
+  width: 40%;
 }
 
 .main {
