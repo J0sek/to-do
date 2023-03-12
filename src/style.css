@@ -77,18 +77,18 @@ li>.counter {
   background-color: rgb(230, 230, 230);
 }
 
-.new-projects,
+.add-new-project,
 .toggle-projects {
   position: absolute;
   right: 0;
   font-size: 24px;
 }
 
-.new-projects {
+.add-new-project {
   right: 10px;
 }
 
-.new-projects:hover {
+.add-new-project:hover {
   cursor: pointer;
 }
 
