@@ -1,9 +1,9 @@
 const project = (function () {
   const projects = {
-    default: [],
+    Main: [],
   };
 
-  let currentProject = projects.default;
+  let currentProject = projects.Main;
 
   function addNewProject(name) {
     projects[name] = [];
@@ -42,16 +42,5 @@ function Item(name, priority, dueDate) {
 
   return { name, priority, dueDate, str };
 }
-
-/*
-
-click on a project and it loads into the page
-
-set to main by default
-
-when added - add and reload
-when removed - remove but don't need to reload
-
-*/
 
 export default project;
